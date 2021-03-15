@@ -10,6 +10,8 @@
     --gray: #48494b;
     --blue-dark: #065364;
     --blue-link: #367e90;
+    --green-light: #def6e1;
+    --blue-light: #d6eef3;
 }
 
 /*---------- Fonts ----------*/
@@ -140,10 +142,16 @@ section{
 
 
 .bg-hero{
-    background-color: #d6eef3;
     padding: 30px;
     height: 400px;
 }
+.bg-hero.blue-light{
+    background-color: var(--blue-light);
+}
+.bg-hero.green-light{
+    background-color: var(--green-light);
+}
+
 .hero-pro{
     margin-top: -320px;
 }
