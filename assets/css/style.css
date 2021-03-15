@@ -14,6 +14,36 @@
 
 /*---------- Fonts ----------*/
 
+@font-face{
+    font-family: DroidSerifRegular ;
+    src: url('../fonts/DroidSerif-Regular.ttf'),
+    url('../fonts/DroidSerif-Regular.woff') format('woff'),
+    url('../fonts/DroidSerif-Regular.otf') format('opentype'),
+    url('../fonts/DroidSerif-Regular.ttf') format('truetype');
+  }
+
+  @font-face{
+    font-family: DroidSerifItalic ;
+    src: url('../fonts/DroidSerif-Italic.ttf'),
+    url('../fonts/DroidSerif-Italic.woff') format('woff'),
+    url('../fonts/DroidSerif-Italic.otf') format('opentype'),
+    url('../fonts/DroidSerif-Italic.ttf') format('truetype');
+  }
+  @font-face{
+    font-family: DroidSerifBoldItalic ;
+    src: url('../fonts/DroidSerif-BoldItalic.ttf'),
+    url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
+    url('../fonts/DroidSerif-BoldItalic.otf') format('opentype'),
+    url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype');
+  }
+  @font-face{
+    font-family: DroidSerifBold ;
+    src: url('../fonts/DroidSerif-Bold.ttf'),
+    url('../fonts/DroidSerif-Bold.woff') format('woff'),
+    url('../fonts/DroidSerif-Bold.otf') format('opentype'),
+    url('../fonts/DroidSerif-Bold.ttf') format('truetype');
+  }
+
 
 
 /*---------- Estilos ----------*/
@@ -22,12 +52,15 @@
 
 
 h1.h2, h1, h2, h3, h4, h5, h6{
+    font-family: DroidSerifBold ;
     color: var(--dark-blue);
 }
 p{
+    font-family: DroidSerifRegular ;
     color: var(--gray);
 }
 a{
+    font-family: DroidSerifBold ;
     color: var(--blue-link);
 }
 
@@ -95,10 +128,12 @@ section{
 .btn.btn-primary.green, .btn.btn-primary.green:focus, .btn.btn-primary.green:hover{
     background-color: var(--green);
     border: 0;
+    font-family: DroidSerifBold ;
 }
 .btn.btn-primary.blue, .btn.btn-primary.blue:focus, .btn.btn-primary.blue:hover {
     background-color: var(--blue);
     border: 0;
+    font-family: DroidSerifBold ;
 }
 
 
@@ -200,12 +235,17 @@ footer .copyright{
 
 /*---------- Media ----------*/
 @media only screen and (max-width:1024px){}
-@media only screen and (max-width:768px){}
+@media only screen and (max-width:768px){
+    .header{
+        background-position: right;
+    }
+}
 @media only screen and (max-width:435px){
     .header{
         padding: 10px;
         min-height: auto;
         height: auto;
+        background-position: center;
     }
     .header .header-title {
         padding: 100px 0;
