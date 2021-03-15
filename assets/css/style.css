@@ -1,0 +1,60 @@
+/*---------- General ----------*/
+
+:root{
+    --bg-overlay: #13192e;
+    --green: #008837;
+    --blue: #01a0c6 ;
+    --dark-blue: #032732;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #48494b;
+}
+
+/*---------- Fonts ----------*/
+
+
+
+/*---------- Estilos ----------*/
+
+.header{
+    background: url(../images/banner-home.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    background-color: var(--bg-overlay);
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .header-title{
+    padding: 200px 0;
+}
+.header .header-title h1, .header .header-title p{
+    color: var(--white);
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+.form-hero .btn.btn-primary{
+    font-size: 14px;
+    padding: 10px 30px;
+
+}
+.btn.btn-primary.green, .btn.btn-primary.green:focus, .btn.btn-primary.green:hover{
+    background-color: var(--green);
+    border: 0;
+}
+.btn.btn-primary.blue, .btn.btn-primary.blue:focus, .btn.btn-primary.blue:hover {
+    background-color: var(--blue);
+    border: 0;
+}
