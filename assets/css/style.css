@@ -139,8 +139,19 @@ section{
  .btn.btn-primary{
     font-size: 13px;
     padding: 20px 32px;
-
 }
+.ventajas .btn.btn-primary{
+    padding: 20px 92px;
+}
+
+.hero .btn.btn-primary{
+    padding: 20px 82px;
+}
+.about .btn.btn-primary{
+    padding: 20px 62px;
+}
+
+
 .btn.btn-primary.green, .btn.btn-primary.green:focus, .btn.btn-primary.green:hover{
     background-image: linear-gradient(to top, #007a30, #007d32, #008133, #008435, #008837);
     border: 0;
