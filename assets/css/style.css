@@ -156,7 +156,7 @@ section{
     font-size: 13px;
     color: #545454;
     border-radius: 4px;
-    
+    height: calc(2em + .75rem + 2px);   
     
 }
 ::placeholder{
